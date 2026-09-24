@@ -3,11 +3,18 @@ const mobilemenu=document.getElementById("mobile-menu");
 const mobileLinks=mobilemenu.querySelectorAll("a");
 menubtn.addEventListener("click",()=>{
     mobilemenu.classList.toggle("hidden");
+
+    if (mobilemenu.classList.contains("hidden")) {
+        menubtn.textContent="☰";
+    }else{
+        menubtn.textContent ="✕";
+    }
 });
 
 mobileLinks.forEach((link)=>{
     link.addEventListener("click",()=>{
         mobilemenu.classList.add("hidden");
+        menuBtn.textContent = "☰";
     });
 });
 
@@ -89,3 +96,48 @@ filterButtons.forEach((button) => {
     });
 });
 
+const contactForm = document.getElementById("contact-form");
+const formMessage = document.getElementById("form-message");
+
+contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+        formMessage.textContent = "Please fill in all fields.";
+        formMessage.classList.remove(
+            "hidden",
+            "text-green-400"
+        );
+        formMessage.classList.add("text-red-400");
+
+        return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+        formMessage.textContent = "Please enter a valid email address.";
+        formMessage.classList.remove(
+            "hidden",
+            "text-green-400"
+        );
+        formMessage.classList.add("text-red-400");
+
+        return;
+    }
+
+    formMessage.textContent =
+        "Message validated successfully. We'll connect this form to a backend later.";
+
+    formMessage.classList.remove(
+        "hidden",
+        "text-red-400"
+    );
+    formMessage.classList.add("text-green-400");
+
+    contactForm.reset();
+});

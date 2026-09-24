@@ -6,6 +6,7 @@
         <title>Nikhil Singh | Frontend Developer</title>
         <link rel="stylesheet" href="./src/output.css">
         <link rel="icon" type="image/png" href="assets/icons/Favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body class="bg-slate-950 text-white scroll-smooth">
         <nav  class=" sticky top-4 z-50 max-w-7xl mx-auto mt-4 md:mt-6 px-5 md:px-10 py-4 rounded-4xl bg-slate-950/80 border border-slate-700/60 shadow-2xl shadow-black/20 backdrop-blur-md flex justify-center md:justify-between items-center">
@@ -55,7 +56,7 @@
                         </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-2xl text-orange-500">
+            <button id="menu-btn" class="md:hidden text-2xl text-orange-500" aria-label="Toggle navigation">
                 ☰
             </button>
 
@@ -489,26 +490,175 @@
         </div>
     </div>
 </section>
-            <section id="contact" class="py-24">
-                <div class="max-w-7xl mx-auto px-5 md:px-10">
-                    <h2 class="text-3xl  md:text-4xl lg:text-5xl font-bold tracking-tight text-center">Contact Me</h2>
-                    <p class="text-orange-400 text-base font-medium text-center mt-3 md:text-lg">Have a project in mind? Let's connect</p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-                        <article class=" p-8 md:p-10 bg-slate-900 border border-slate-700 rounded-2xl   text-center hover:-translate-y-2 hover:border-orange-500 transition-all duration-300" >
-                            <h3 class="text-orange-400 hover:text-orange-300  text-lg md:text-xl">Email</h3>
-                            <a class="text-orange-400 hover:text-orange-300 transition-colors duration-300 break-all" href="mailto:nikhilsingh110104@gmail.com">Send Email</a>
-                        </article>
-                        <article class="bg-slate-900 border border-slate-700 rounded-2xl p-8 md:p-10 text-center hover:-translate-y-2  hover:border-orange-500 transition-all duration-300" >
-                            <h3 class="text-orange-400 hover:text-orange-300 text-lg md:text-xl ">LinkedIn</h3>
-                            <a class="text-orange-400 hover:text-orange-300 transition-colors duration-300 break-all " href="https://linkedin.com/in/nikhil-singh-748536362" target="_blank" rel="noopener noreferrer">linkedin.com/in/Nikhil-Singh</a>
-                        </article>
-                        <article class="bg-slate-900 border border-slate-700 rounded-2xl p-8 md:p-10 text-center hover:-translate-y-2 hover:border-orange-500 transition-all duration-300" >
-                            <h3  class="text-orange-400 hover:text-orange-300 text-lg md:text-xl">GitHub</h3>
-                            <a class="text-orange-400 hover:text-orange-300 transition-colors duration-300 break-all" href="https://github.com/Nks-tech-ctrl " target="_blank" rel="noopener noreferrer">Nks-tech-ctrl</a>
-                        </article>
+<section id="contact" class="py-24 scroll-mt-28">
+    <div class="max-w-5xl mx-auto px-5 md:px-10">
+        <div class="text-center">
+            <p class="text-orange-400 text-sm font-semibold uppercase tracking-[0.25em]">
+                Get In Touch
+            </p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mt-3">
+                Let's Build Something Together
+            </h2>
+            <p class="text-slate-400 max-w-xl mx-auto mt-4 leading-7">
+                Have an idea, opportunity, or project in mind?
+                Let's connect and make it happen.
+            </p>
+        </div>
+        <div class="mt-12 bg-slate-900 border border-slate-700 rounded-3xl overflow-hidden shadow-2xl shadow-black/20">
+            <!-- Terminal Header -->
+            <div class="flex items-center gap-2 px-5 py-4 border-b border-slate-700 bg-slate-950">
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                <span class="text-slate-500 text-sm ml-3 font-mono">
+                    contact.js
+                </span>
+            </div>
+            <!-- Terminal Content -->
+            <div class="p-6 md:p-10 font-mono">
+                <!-- Who Am I -->
+                <div class="mb-8">
+                    <p class="text-slate-500">
+                        <span class="text-orange-400">$</span>
+                        whoami
+                    </p>
+                    <p class="text-slate-200 mt-2">
+                        Nikhil Singh
+                        <span class="text-slate-500">
+                            — Frontend Developer
+                        </span>
+                    </p>
+                </div>
+                <div class="mb-8">
+                    <p class="text-slate-500">
+                        <span class="text-orange-400">$</span>
+                        connect --with-me
+                    </p>
+                    <div class="mt-5 space-y-4">
+                        <a href="mailto:nikhilsingh110104@gmail.com" class="flex items-center gap-3 group">
+                            <i
+                                class="fa-solid fa-envelope text-orange-400 w-5 text-center group-hover:scale-110 transition-transform"></i>
+                            <span class="text-cyan-400 w-24">
+                                email
+                            </span>
+                            <span class="text-slate-500">
+                                →
+                            </span>
+                            <span class="text-slate-300 group-hover:text-orange-400 transition-colors break-all">
+                                nikhilsingh110104@gmail.com
+                            </span>
+                        </a>
+                        <a href="https://github.com/Nks-tech-ctrl" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-3 group">
+                            <i
+                                class="fa-brands fa-github text-orange-400 w-5 text-center group-hover:scale-110 transition-transform"></i>
+                            <span class="text-cyan-400 w-24">
+                                github
+                            </span>
+                            <span class="text-slate-500">
+                                →
+                            </span>
+                            <span class="text-slate-300 group-hover:text-orange-400 transition-colors">
+                                Nks-tech-ctrl
+                            </span>
+                        </a>
+                        <a href="https://linkedin.com/in/nikhil-singh-748536362" target="_blank"
+                            rel="noopener noreferrer" class="flex items-center gap-3 group">
+                            <i
+                                class="fa-brands fa-linkedin text-orange-400 w-5 text-center group-hover:scale-110 transition-transform"></i>
+
+                            <span class="text-cyan-400 w-24">
+                                linkedin
+                            </span>
+
+                            <span class="text-slate-500">
+                                →
+                            </span>
+
+                            <span class="text-slate-300 group-hover:text-orange-400 transition-colors">
+                                Nikhil Singh
+                            </span>
+                        </a>
+
                     </div>
                 </div>
-            </section>
+                <div>
+                    <p class="text-slate-500"><span class="text-orange-400">$</span>
+                        send-message
+                    </p>
+                    <form id="contact-form" class="mt-6 space-y-5">
+                        <p id="form-message" class="hidden text-sm mt-4"></p>
+                        <div>
+                            <label for="name" class="flex items-center gap-2 text-cyan-400 mb-2">
+                                <i class="fa-solid fa-user text-sm"></i>
+                                name
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Your name" class="w-full px-4 py-3 rounded-xl
+                                       bg-slate-950
+                                       border border-slate-700
+                                       text-white
+                                       placeholder-slate-600 outline-none focus:border-orange-500 transition-colors">
+                        </div>
+
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="flex items-center gap-2 text-cyan-400 mb-2">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                                email
+                            </label>
+
+                            <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl
+                                       bg-slate-950
+                                       border border-slate-700
+                                       text-white
+                                       placeholder-slate-600
+                                       outline-none
+                                       focus:border-orange-500
+                                       transition-colors">
+                        </div>
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="flex items-center gap-2 text-cyan-400 mb-2">
+                                <i class="fa-solid fa-message text-sm"></i>
+                                message
+                            </label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                class="w-full px-4 py-3 rounded-xl
+                                       bg-slate-950
+                                       border border-slate-700
+                                       text-white
+                                       placeholder-slate-600
+                                       outline-none
+                                       focus:border-orange-500
+                                       transition-colors
+                                       resize-none"></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="inline-flex items-center gap-2
+                                   px-6 py-3 rounded-xl
+                                   bg-orange-500
+                                   text-white
+                                   font-semibold
+                                   hover:bg-orange-600
+                                   hover:-translate-y-0.5
+                                   transition-all duration-300">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>
+                                Send Message
+                            </span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+            
         </main> 
 
         <footer class="border-t border-slate-800 py-8 mt-24">
